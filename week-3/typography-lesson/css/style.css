@@ -1,0 +1,179 @@
+/** General Styling **/
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0px;
+    background-color: #f8f8f8;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Montserrat", sans-serif;
+}
+
+p, a, li {
+    font-family: "Lato", sans-serif;
+    font-size: 1.2em;
+    text-decoration: none;
+}
+
+/** Prepare our Custom Font **/
+@font-face {
+    /* Name of font */
+    font-family: lessonFont;
+    /* link font family */
+    src: url(../fonts/UrbanJungleDEMO.otf);
+}
+
+/** Global Classes & ID's **/
+.f-row {
+    display: flex;
+}
+
+.g-row {
+    display: grid;
+}
+
+.lesson-row {
+    min-height: 200px;
+    align-items: center;
+    padding: 2% 5%;
+}
+
+/** Main Header **/
+header {
+    width: auto;
+    height: 110px;
+    background-color: #f8f8f8;
+    align-items: center;
+}
+
+header div {
+    width: auto;
+    height: 100px;
+    flex-grow: 1;
+}
+
+header img {
+    width: auto;
+    height: 100%;
+}
+
+header menu {
+    list-style: none;
+    margin: 0px;
+}
+
+header li {
+    padding: 0px 10px;
+}
+
+header > nav > menu > li > a {
+    color: #0e0e0e;
+}
+
+/** Main Masthead **/
+.main-masthead {
+    width: auto;
+    height: 100vh;
+    background-image: url("../img/masthead.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.main-mask {
+    width: 50%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .7);
+    align-items: center;
+    justify-content: center;
+}
+
+.main-mask h1 {
+    font-size: 4.5em;
+    color: #f8f8f8;
+    text-shadow: 4px 4px 3px #0e0e0e;
+    letter-spacing: 4.5px;
+    font-family: lessonFont;
+}
+
+/** Row One **/
+#lesson-row-one {
+    text-align: center;
+}
+
+#lesson-row-one h2 {
+    font-size: 2.5em;
+    color: #0e0e0e;
+    letter-spacing: 1.5px;
+}
+
+/** Row Two **/
+#contrast-lesson-row > div:first-child,
+#contrast-lesson-row > div:last-child {
+    grid-template-columns: 50% 50%;
+}
+#contrast-lesson-row h3 {
+    font-size: 2.5em;
+}
+#contrast-lesson-row > div:first-child > div,
+#contrast-lesson-row > div:last-child > div {
+    align-items: center;
+    justify-content: center;
+    min-height: 300px;
+}
+#contrast-lesson-row > div:first-child > div:nth-child(1) {
+    background-color: #ffa500;
+    color: #ffff00;
+}
+#contrast-lesson-row > div:first-child > div:nth-child(2) {
+    background-color: #003049;
+    color: #eae2b7;
+}
+#contrast-lesson-row > div:last-child > div:nth-child(1) {
+    background-image: url("../img/typo-1.jpg");
+    background-size: cover;
+}
+#contrast-lesson-row > div:last-child > div:nth-child(2) {
+    background-image: url("../img/typo-1.jpg");
+    background-size: cover;
+}
+#contrast-lesson-row > div:last-child > div:nth-child(2) h3 {
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    margin: 0px;
+    background-color: rgba(0, 48, 73, .3);
+    color: #f8f8f8;
+    text-shadow: 4px 4px 3px #0e0e0e;
+}
+
+/** Row Three **/
+#letter-lesson-row {
+    grid-template-columns: 50% 50%;
+}
+#letter-lesson-row div,
+#spacing-lesson-row div {
+    padding: 15px;
+}
+#letter-lesson-row div:nth-child(1) h3 {
+    font-size: 2.5em;
+    font-kerning: none;
+}
+#letter-lesson-row div:nth-child(1) p {
+    font-kerning: normal;
+}
+#letter-lesson-row div:nth-child(2) h3 {
+    font-size: 2.5em;
+    letter-spacing: 1.25px;
+}
+#letter-lesson-row p::first-line {
+    font-weight: 900;
+}
+#letter-lesson-row p::first-letter {
+    font-family: lessonFont;
+    font-size: 2em;
+    color: #d62828;
+}

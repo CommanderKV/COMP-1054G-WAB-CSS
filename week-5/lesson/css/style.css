@@ -1,0 +1,119 @@
+/*
+Colors:
+Orange     #D00000
+Yellow     #FFBA08
+Steel Blue #3F88C5
+Dark Blue  #032B43
+Pine Green #136F63
+review these links
+  https://developer.mozilla.org/en-US/docs/Web/CSS/Webkit_Extensions
+  https://developer.mozilla.org/en-US/docs/Web/CSS/Microsoft_Extensions
+  https://developer.mozilla.org/en-US/docs/Web/CSS/Mozilla_Extensions
+*/
+/** General Styling **/
+html{scroll-behavior: smooth;}
+body{margin: 0px; color: #f8f8f8;}
+h1,h2,h3,h4,h5,h6{font-family: 'Montserrat Alternates',sans-serif;}
+p,a,li,td{font-family: 'Raleway',"Sans Serif Collection"; font-size: 1.2em;}
+header a:hover, header a:active, header a:focus, header a:visited{
+	color: #FFBA08;
+}
+
+/** Classes **/
+.f-row {display: flex;}
+.g-row {display: grid;}
+.g-column1 {grid-template-columns: 100%;}
+.g-column2 {grid-template-columns: 50% 50%;}
+.g-column3 {grid-template-columns: repeat(3, 1fr);}
+.g-column4 {grid-template-columns: repeat(4, 25%);}
+
+/** Styling by Page **/
+header {
+	align-items: center;
+	height: 115px;
+	padding: 5px;
+	background-color: #032B43;
+}
+header div {
+	flex-grow: 1;
+	width: auto;
+	height: 105px;
+}
+header img {
+	width: auto;
+	height: 100%;
+}
+header menu {
+	padding: 0px;
+	margin: 0px;
+	list-style: none;
+}
+header li {
+	padding: 0px 10px;
+}
+header li a {
+	color: #f8f8f8;
+	text-decoration: none;
+	transition: all .25s linear;
+}
+
+.video-masthead {
+	height: 100vh;
+}
+#video-background {
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: -1;
+}
+.tagline-container {
+	display: flex;
+	flex-direction: column;
+	position: absolute;
+	top: 125px;
+	width: 100%;
+	height: 100%;
+	align-items: center;
+	justify-content: center;
+	background-color: rgba(19, 111, 99, .3);
+}
+.video-masthead h1 {
+	margin-top: 0px;
+	font-size: 4.5em;
+	text-shadow: 4px 2px 4px rgba(0, 0, 0, .8);
+}
+.video-masthead h2 {
+	font-size: 4em;
+	text-shadow: 4px 2px 4px rgba(0, 0, 0, .8);
+}
+
+#row-1 div {
+	padding: 5%;
+}
+#row-1 div:nth-child(2) {
+	text-align: center;
+}
+#row-1 div:nth-child(2) img {
+	width: 80%;
+	height: auto;
+	margin: auto;
+	border-radius: 50%;
+}
+
+#row-2 div:nth-child(1) {
+	text-align: center;
+	padding: 15px;
+}
+#row-2 div:nth-child(1) img {
+	width: 100%;
+	height: auto;
+	transition: all .25s ease-in-out;
+	filter: grayscale(100%);
+}
+#row-2 div:nth-child(1) img:hover {
+	filter: grayscale(0%);
+}

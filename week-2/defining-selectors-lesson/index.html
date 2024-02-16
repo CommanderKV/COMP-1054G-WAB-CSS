@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Defining Selectors | Interface Design Using CSS</title>
+  <meta name="description" content="This week we will be looking at how we can use smarter selectors to create our web applications interface">
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="apple-touch-icon" sizes="180x180" href="./img/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon-16x16.png">
+  <!-- link our CSS -->
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+<!-- even though our main focus is the styling, we need to make sure that our HTML is valid and we are using semantic elements where we can. -->
+<header class="lesson-flex-row">
+  <!-- our logo container -->
+  <div>
+    <a href="index.html"><img src="./img/company-logo.png" alt="company logo"></a>
+  </div>
+  <!-- now our site navigation -->
+  <nav>
+    <menu class="lesson-flex-row">
+      <li><a href="#lesson-row-one">Row One</a></li>
+      <li><a href="#lesson-row-two">Row Two</a></li>
+      <li><a href="#lesson-row-three">Row Three</a></li>
+      <li><a href="#lesson-row-four">Row Four</a></li>
+    </menu>
+  </nav>
+</header>
+<main>
+  <section class="lesson-masthead">
+    <div class="lesson-mask lesson-flex-row">
+      <h1>Building Smarter Selectors</h1>
+    </div>
+  </section>
+  <section class="lesson-grid-row" id="lesson-row-one">
+    <div>
+      <h2>Some Title Goes Here</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid aut consectetur dolores molestiae molestias optio quaerat voluptatem? Alias aliquid amet <a href="https://www.w3.org/" target="_blank">consectetur</a> consequatur ex fugit itaque magni odio placeat quos repellat repudiandae saepe sed tempora, ullam!</p>
+      <p>Lorem ipsum dolor sit amet, <a href="https://www.georgiancollege.ca/">consectetur</a> adipisicing elit. Assumenda consectetur debitis deleniti ea enim explicabo, facere placeat recusandae veniam voluptas?</p>
+    </div>
+    <div>
+      <!-- this contains a background image -->
+    </div>
+  </section>
+  <section id="lesson-row-two" class="lesson-grid-row">
+    <div>
+      <h3>Title</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci culpa delectus incidunt quisquam totam veritatis?</p>
+      <a href="index.html" class="lesson-btn lesson-btn-1">Button</a>
+    </div>
+    <div>
+      <h3>Title</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci culpa delectus incidunt quisquam totam veritatis?</p>
+      <a href="about.html" class="lesson-btn lesson-btn-2">Button</a>
+    </div>
+    <div>
+      <h3>Title</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci culpa delectus incidunt quisquam totam veritatis?</p>
+      <a href="another-page.html" class="lesson-btn lesson-btn-1">Button</a>
+    </div>
+  </section>
+</main>
+<footer class="lesson-grid-row">
+  <div>
+    <a href="index.html"><img src="./img/company-logo.png" alt="footer logo"></a>
+  </div>
+  <div>
+    <h5>Footer Title</h5>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad alias architecto assumenda consectetur delectus doloribus iste iusto molestiae saepe sint?</p>
+  </div>
+  <div>
+    <h5>Footer List</h5>
+    <ul>
+      <li>Item One</li>
+      <li>Item Two</li>
+      <li>Item Three</li>
+    </ul>
+  </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Week 5 | Compatibility & Media</title>
+		<meta name="description"
+			content="This week we are looking at how to used different media and ensure that our CSS is compatible across all browsers">
+		<meta name="robots" content="noindex, nofollow">
+		<!-- add fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;500&family=Raleway:wght@400;500;700&display=swap"
+			rel="stylesheet">
+		<!-- add CSS -->
+		<!-- first let's add our reset.css. we will comment this out before we add our normalization css since we don't want both running. get our reset from here: https://meyerweb.com/eric/tools/css/reset/ -->
+		<!-- <link rel="stylesheet" href="./css/reset.css"> -->
+
+		<!-- Add the normalization.css, get it from: https://necolas.github.io/normalize.css/ -->
+		<link rel="stylesheet" href="./css/normalize.css">
+
+		<!-- validate the CSS here: https://jigsaw.w3.org/css-validator/ -->
+		<link rel="stylesheet" href="./css/style.css">
+	</head>
+
+	<body>
+		<header class="f-row">
+			<div>
+				<a href="index.html">
+					<img src="./img/sample-logo.png" alt="header logo">
+				</a>
+			</div>
+			<nav>
+				<menu class="f-row">
+					<li><a href="#row-1">Row One</a></li>
+					<li><a href="#row-2">Row Two</a></li>
+					<li><a href="#row-3">Row Three</a></li>
+				</menu>
+			</nav>
+		</header>
+		<main>
+			<!-- this masthead will have a video background -->
+			<section class="video-masthead">
+				<!-- add our video here -->
+				<video id="video-background" loop autoplay muted poster="./img/video-still.jpg">
+					<source src="./video/water-video.mp4" type="video/mp4">
+					Your browser sucks get a new one
+				</video>
+				<div class="tagline-container">
+					<h1>This is a Video Background!</h1>
+					<h2>Awesome Right</h2>
+				</div>
+			</section>
+			<section class="g-row g-col-2" id="row-1">
+				<div class="f-row">
+					<h3>Section Title</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aut autem commodi corporis
+						deleniti dicta
+						distinctio dolorum earum eligendi enim, et facilis fugiat id inventore minus molestiae natus nobis
+						non
+						obcaecati odit provident quaerat qui reiciendis reprehenderit repudiandae sint soluta sunt totam
+						vero
+						voluptatem. Asperiores distinctio excepturi possimus provident quam quidem, repellat?</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus deleniti dignissimos eum facilis
+						harum
+						laudantium nisi quam temporibus ullam veritatis. Amet error est magnam veniam.</p>
+				</div>
+				<div>
+					<img src="./img/img1.jpg">
+				</div>
+			</section>
+			<section class="g-row g-col-2" id="row-2">
+				<div>
+					<img src="./img/img3.jpg">
+				</div>
+				<div class="f-row">
+					<h3>Hover Over The Image!!</h3>
+				</div>
+			</section>
+			<section class="f-row" id="row-3">
+				<!-- this image will actually be a background image, we will make our content transparent until hover -->
+				<div class="mask">
+					<h3>See Me Now!</h3>
+				</div>
+			</section>
+		</main>
+		<footer class="f-row">
+			<div>
+				<a href="index.html">
+					<img src="./img/sample-logo.png" alt="header logo">
+				</a>
+			</div>
+			<div>
+				<h5>Footer Title</h5>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam at atque, culpa deserunt ducimus eaque
+					earum
+					eveniet facere, illum libero magnam molestiae natus neque nesciunt possimus quaerat quidem quo
+					reiciendis rerum,
+					sapiente sed sint sit tempore temporibus ullam vero voluptate.</p>
+			</div>
+		</footer>
+	</body>
+
+</html>

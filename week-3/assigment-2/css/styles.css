@@ -1,0 +1,84 @@
+/* Gneral formatting */
+html {
+    background-color: #f8f8f8;
+    font-family: "Protest Riot";
+    color: #393939;
+}
+p {
+    font-size: 1.2em;
+}
+span {
+    font-size: 1em;
+    align-self: end;
+    color: #a0a0a0
+}
+ul {
+    list-style: none;
+}
+
+/* Lyric display format */
+.lyric-section p{
+    margin: 3px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 0px;
+}
+.lyric-section > :last-child {
+    margin-bottom: 15px;
+}
+.lyric-section > p:first-child {
+    font-family: Arial;
+    margin-bottom: 6px;
+    font-weight: 900;
+}
+
+.lyric-section > div {
+    display: flex;
+}
+
+/* Lyric text formatting */
+.loose {
+    font-family: "Single day", sans-serif;
+    letter-spacing: 2px;
+    font-size: 1.6em;
+    color: #ec7e00; /* 00d652 */
+}
+.bold {
+    font-family: "Sixtyfour", sans-serif;
+    color: #ff0000
+}
+.intense2 {
+    font-family: "Protest Revolution", sans-serif;
+    font-size: 1.3em;
+    font-weight: 100;
+    color: #8f00bb;
+}
+
+.intense {
+    font-family: "Nanum Brush Script", sans-serif;
+    font-size: 2em;
+    font-weight: 600;
+    line-height: 24px;
+    color: #002cbb;
+}
+.taunting {
+    color: #000;
+    font-family: "Indie Flower", sans-serif;
+    font-size: 1.3em;
+    font-weight: 600;
+    line-height: 25px;
+    letter-spacing: 4px;
+    color: #00d652; /* #ec7e00 */
+}
+.taunting:first-child {
+    margin-top: 10px;
+}
+
+.fade {
+    text-shadow: 4px 4px 3px #979797;
+}
+.big {
+    font-family: "Protest Riot", serif;
+    font-size: 1.7em;
+    color: #ffffff;
+}

@@ -1,0 +1,142 @@
+/*
+Color pallet:
+    #EE7E27 Orange
+    #F8F8F8 White
+    #000000 Black
+    #FF4500 OrangeRed
+*/
+
+/* Setting displays */
+.f-display {display: flex;}
+.g-display {display: grid;}
+
+/* Page background */
+html {
+    background-color: #000000;
+    color: #f8f8f8;
+}
+
+/* Navigator */
+header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+    height: 100px;
+
+    background-color: #EE7E27;
+}
+header nav {
+    padding-right: 2rem;
+}
+header li {
+    list-style: none;
+    padding: 0px 10px;
+}
+header li a {
+    color: #000000;
+    text-decoration: none;
+    font-size: 20px;
+    transition: all .25s linear;
+}
+header li a:hover {
+    color: #f8f8f8;
+}
+header a img {
+    margin-top: 5px;
+    margin-left: 10px;
+    height: 80px;
+    width: auto;
+}
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+/*
+------------
+  Masthead
+------------
+*/
+.masthead {
+    height: 550px;
+    align-items: center;
+    justify-content: center;
+    background-color: #1f1f1f;
+}
+.masthead h1 {
+    font-size: 96px;
+    text-align: center;
+    margin-top: 100px;
+}
+
+/*
+-----------
+  Content
+-----------
+*/
+.services {
+    padding-top: 30px;
+    height: 500px;
+}
+.services section {
+    grid-template-columns: 40% 50%;
+    align-items: center;
+
+    width: 790px;
+    height: 315px;
+    background-color: #EE7E27;
+    outline: #f8f8f8 solid 5px;
+    border-radius: 105px;
+    
+    position: relative;
+    text-align: center;
+    color: #000000
+}
+.services section h2 {
+    margin-top: 0px;
+    position: relative;
+    left: 120px;
+    top: 42.5px;
+    width: 550px;
+    font-size: 128px;
+
+    transition-duration: 0.7s;
+    transition-timing-function: ease-in-out;
+}
+.services section p {
+    position: relative;
+    top: 0px;
+    padding-top: 0px;
+    margin-top: 0px;
+    font-size: 24px;
+    padding-right: 10px;
+
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+/* About me */
+.about {
+    left: 3%;
+}
+.about p {
+    width: 399px;
+}
+
+/* 
+ About me 
+transforms
+*/
+.about:hover h2{
+    margin-top: 47px;
+    position: relative;
+    left: 15px;
+    top: 0px;
+    width: 273px;
+    font-size: 96px;
+}
+.about:hover p {
+    opacity: 1;
+}

@@ -78,56 +78,87 @@ header li a:hover {
 */
 .services {
     padding-top: 30px;
-    height: 500px;
+    height: 100%;
     display: flex;
     justify-content: left;
+    flex-direction: column;
 }
 .services section {
-    display: grid;
+    display: flex;
     align-items: center;
     justify-content: center;
 
     min-width: 790px;
-    max-width: 50%;
+    max-width: 60%;
     height: 315px;
     margin: 3% 3%;
     
     background-color: #EE7E27;
     outline: #f8f8f8 solid 5px;
     border-radius: 105px;
-    color: #000000
+    color: #000000;
+
+    transition-duration: .7s;
+    transition-timing-function: ease-in-out;
+}
+.services section:nth-child(even) {
+    align-self: flex-end;
 }
 .services section h2 {
-    width: 100%;
+    position: relative;
+    left: auto;
+    width: auto;
     height: auto;
-    font-size: 5.5em;
+
+    
+    font-size: 8em;
+    text-wrap: nowrap;
     text-align: center;
     text-decoration: underline;
 
-    padding-top: .2em;
-    transition: all .7s ease-in-out;
+    transition-property: font-size, transform, left;
+    transition-duration: .7s;
+    transition-timing-function: ease-in-out;
 }
 .services section p {
+    visibility: hidden;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+
+    align-items: end;
+
+    width: 0;
+    height: auto;
+    
     opacity: 0;
     font-size: 24px;
-    transition: opacity 0.5s ease-in-out;
+    text-align: center;
+
+    clip-path: inset(0 50% 0 50%);
+    
+    transition-property: opacity, clip-path, width;
+    transition-duration: 1.5s;
+    transition-timing-function: ease-in-out;
 }
-
-/* About me */
-
-/* 
- About me 
-transforms
+/*
+    All section
+    transforms
 */
-.about:hover {
-    width: auto;
-    display: grid;
-    grid-template-columns: 50% 50%;
+.services section:hover {
+    transform: scale(1.2);
+    margin: 6% 10%;
 }
-.about:hover h2{
+.services section:hover h2{
+    left: 0px;
     margin-top: 47px;
     font-size: 5em;
 }
-.about:hover p {
+.services section:hover p {
+    visibility: visible;
+    position: inherit;
+    clip-path: inset(0 0 0 0);
+    min-width: 350px;
+    height: auto;
     opacity: 1;
 }

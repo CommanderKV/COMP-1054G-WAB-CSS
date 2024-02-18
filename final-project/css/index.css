@@ -19,6 +19,7 @@ html {
 
 /* Navigator */
 header {
+    display: flex;
     justify-content: space-between;
     align-items: center;
 
@@ -76,14 +77,14 @@ header li a:hover {
   Content
 -----------
 */
-.services {
+.home {
     padding-top: 30px;
     height: 100%;
     display: flex;
     justify-content: left;
     flex-direction: column;
 }
-.services section {
+.home section {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -101,10 +102,10 @@ header li a:hover {
     transition-duration: .7s;
     transition-timing-function: ease-in-out;
 }
-.services section:nth-child(even) {
+.home section:nth-child(even) {
     align-self: flex-end;
 }
-.services section h2 {
+.home section h2 {
     position: relative;
     left: auto;
     width: auto;
@@ -120,7 +121,7 @@ header li a:hover {
     transition-duration: .7s;
     transition-timing-function: ease-in-out;
 }
-.services section p {
+.home section p {
     visibility: hidden;
     position: absolute;
     top: 0px;
@@ -145,16 +146,16 @@ header li a:hover {
     All section
     transforms
 */
-.services section:hover {
+.home section:hover {
     transform: scale(1.2);
     margin: 6% 10%;
 }
-.services section:hover h2{
+.home section:hover h2{
     left: 0px;
     margin-top: 47px;
     font-size: 5em;
 }
-.services section:hover p {
+.home section:hover p {
     visibility: visible;
     position: inherit;
     clip-path: inset(0 0 0 0);
@@ -162,3 +163,68 @@ header li a:hover {
     height: auto;
     opacity: 1;
 }
+
+
+/*
+------------
+  Services
+------------
+*/
+.services {
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: auto;
+    grid-template-columns: 100%;
+}
+.services section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 70%;
+    height: 458px;
+    text-align: center;
+    margin: 30px auto;
+    background-color: #EE7E27;
+
+    border-radius: 105px;
+    outline: #f8f8f8 solid 5px;
+}
+.services section a {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 25% 25%;
+
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
+}
+.services section h2 {
+    font-size: 5em;
+    text-align: center;
+}
+.services section p {
+    width: 60%;
+    height: auto;
+    font-size: 1.5em;
+    text-align: center;
+}
+/*
+#py-dev {
+    background-image: ;
+}
+#web-dev {
+    background-image: ;
+}
+#cpp-dev {
+    background-image: ;
+}
+#php-dev {
+    background-image: ;
+}
+#java-dev {
+    background-image: ;
+}
+*/

@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap');
+
+/* Container for the text and image */
+.text-w-img-in-back {
+    position: relative;
+    height: 500px;
+    width: auto;
+
+    color: white;
+    text-align: center;
+
+    overflow: hidden;
+}
+
+/* Image in the background */
+.text-w-img-in-back img {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    height: auto;
+    width: 100%;
+
+    filter: brightness(0%);
+}
+
+/* Text in the foreground */
+.text-w-img-in-back .text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+    transform: translate(-50%, -50%);
+
+    width: 100%;
+    height: auto;
+
+    font-family: "bubblegum sans", sans-serif;
+    letter-spacing: 2px;
+    font-size: 50px;
+
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+
+    /*
+    Used for adding outline to text
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-fill-color: rgba(255, 255, 255, 0);
+    -webkit-text-stroke-color: #f8f8f8f8; 
+    */
+
+    background-size: cover;
+    background-position: center;
+    background-clip: text;
+    color: transparent; 
+}
+
+@media (max-width: 768px) {
+    .text-w-img-in-back {
+        height: 300px;
+    }
+
+    .text-w-img-in-back .text {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    .text-w-img-in-back {
+        height: 200px;
+    }
+
+    .text-w-img-in-back .text {
+        font-size: 25px;
+    }
+}

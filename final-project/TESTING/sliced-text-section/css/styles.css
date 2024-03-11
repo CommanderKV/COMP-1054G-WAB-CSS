@@ -1,0 +1,92 @@
+/* Reset default padding and margin for the body */
+body {
+    padding: 0;
+    margin: 0;
+}
+
+/* Styling for the half-half-text section */
+section.half-half-text {
+    position: relative;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    color: white;
+    background-image: linear-gradient(70deg, black 40%, #cfcfcf 60%);
+    overflow: hidden;
+    pointer-events: none;
+    z-index: 1;
+}
+
+/* Styling for the background gradient */
+section.half-half-text::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(-70deg, black 40%, #cfcfcf 60%);
+    z-index: -1;
+    opacity: 0;
+    transition: opacity .9s ease-in-out;
+}
+
+/* Styling for the content divs */
+section.half-half-text div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 0;
+    width: 90%;
+}
+
+/* Enable pointer events for the second content div */
+section.half-half-text div:nth-child(2) {
+    pointer-events: auto;
+}
+
+/* Styling for the background gradient on hover */
+section.half-half-text:hover::before {
+    opacity: 1;
+}
+
+/* Styling for the headings within the content divs */
+section.half-half-text div h1,
+section.half-half-text div h2,
+section.half-half-text div h3 {
+    flex-flow: 1;
+    width: 25%;
+    text-align: center;
+}
+
+/* Styling for the paragraphs within the content divs */
+section.half-half-text div p {
+    padding-left: 10px;
+    text-align: center;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 1200px) {
+    section.half-half-text div {
+        flex-direction: column;
+    }
+    section.half-half-text {
+        
+        grid-template-columns: auto;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        background-image: linear-gradient(45deg, #cfcfcf 10%, black 20%,  black 65%, #cfcfcf 75%);
+    }
+    section.half-half-text div {
+        width: 70%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+

@@ -22,7 +22,7 @@
     height: auto;
     width: 100%;
 
-    filter: brightness(0%);
+    filter: grayscale() blur(3px) brightness(0.7);
 }
 
 /* Text in the foreground */
@@ -37,13 +37,13 @@
     height: auto;
 
     font-family: "bubblegum sans", sans-serif;
+    font-weight: bold;
     letter-spacing: 2px;
-    font-size: 50px;
+    font-size: 5vw;
 
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    /* text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); */
 
-    /*
-    Used for adding outline to text
+    /* Used for adding outline to text /
     -webkit-text-stroke-width: 1px;
     -webkit-text-fill-color: rgba(255, 255, 255, 0);
     -webkit-text-stroke-color: #f8f8f8f8; 
@@ -52,16 +52,26 @@
     background-size: cover;
     background-position: center;
     background-clip: text;
+    -webkit-background-clip: text;
     color: transparent; 
+}
+
+/*
+@media (max-width: 1440px) {
+    .text-w-img-in-back {
+        height: 400px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .text-w-img-in-back {
+        height: 350px;
+    }
 }
 
 @media (max-width: 768px) {
     .text-w-img-in-back {
         height: 300px;
-    }
-
-    .text-w-img-in-back .text {
-        font-size: 30px;
     }
 }
 
@@ -69,8 +79,4 @@
     .text-w-img-in-back {
         height: 200px;
     }
-
-    .text-w-img-in-back .text {
-        font-size: 25px;
-    }
-}
+} */

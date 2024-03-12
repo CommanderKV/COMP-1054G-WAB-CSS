@@ -27,6 +27,7 @@ header {
     height: 100px;
 
     background-color: #EE7E27;
+    overflow: hidden;
 }
 header nav {
     padding-right: 2em;
@@ -85,15 +86,6 @@ header li a:hover {
     flex-direction: column;
 }
 .home section {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    min-width: 790px;
-    max-width: 60%;
-    height: 315px;
-    margin: 3% 3%;
-    
     background-color: #EE7E27;
     outline: #f8f8f8 solid 5px;
     border-radius: 105px;
@@ -111,8 +103,6 @@ header li a:hover {
     width: auto;
     height: auto;
 
-    
-    font-size: 8em;
     text-wrap: nowrap;
     text-align: center;
     text-decoration: underline;
@@ -133,7 +123,6 @@ header li a:hover {
     height: auto;
     
     opacity: 0;
-    font-size: 24px;
     text-align: center;
 
     clip-path: inset(0 50% 0 50%);
@@ -151,7 +140,7 @@ header li a:hover {
     margin: 6% 10%;
 }
 .home section:hover h2{
-    left: 0px;
+    left: 10px;
     margin-top: 47px;
     font-size: 5em;
 }
@@ -159,7 +148,6 @@ header li a:hover {
     visibility: visible;
     position: inherit;
     clip-path: inset(0 0 0 0);
-    min-width: 350px;
     height: auto;
     opacity: 1;
 }
@@ -279,3 +267,70 @@ header li a:hover {
     width: 100%;
     height: auto;
 }
+
+
+@media (min-width: 768px){
+    .home section {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+
+        width: 60%;
+        height: 315px;
+        margin: 3% 3%;
+    }
+    .home section h2 {
+        font-size: 6.8em;
+    }
+    .home section:hover h2 {
+        font-size: 2.8em;
+        margin-right: 5px;
+    } 
+    .home section p{
+        font-size: 1.3em;
+        width: 80%;
+    }
+}
+
+@media (max-width: 768px) {
+    .home section {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        
+        
+        width: 60%;
+        height: 40%;
+        margin: 3% 3%;
+        
+        pointer-events: none;
+    }
+    .home section h2 {
+        font-size: 3em;
+        clip-path: (0 0 0 0);
+    }
+    .home section p {
+        visibility: visible;
+        position: inherit;
+        opacity: 1;
+        font-size: 1.5em;
+        width: 80%;
+        height: auto;
+        clip-path: inset(0 0 0 0);
+    }
+}
+
+@media (max-width: 425px) {
+    header nav {
+        padding-right: 0px;
+    }
+    .home section:nth-child(even),
+    .home section:nth-child(odd) {
+        align-self: center;
+        width: 85%;
+    }
+}
+
+

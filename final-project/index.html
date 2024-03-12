@@ -7,23 +7,28 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <link href="css/normalize.css" rel="stylesheet"/>
         <link href="css/index.css" rel="stylesheet" type="text/css"/>
+        <script src="js/sidebar.js" defer></script>
     </head>
     <body>
         <header class="f-display">
             <!-- <?php require("includes/header.html")?> -->
-            <a href="index.html">
-                <img src="imgs/logo.png" alt="CommanderKV logo"/>
-            </a>
-            <nav>
-                <ul class="f-display">
-                    <li><a href="about/">About</a></li>
-                    <li><a href="services/">Services</a></li>
-                    <li><a href="expertise.html">Expertise</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
+            <div class="navigation">
+                <span class="closeBtn" onclick="closeNavigation()">&times;</span>
+                <a href="index.html">
+                    <img src="imgs/logo.png" alt="CommanderKV logo"/>
+                </a>
+                <nav>
+                    <ul class="f-display">
+                        <li><a href="about/">About</a></li>
+                        <li><a href="services/">Services</a></li>
+                        <li><a href="expertise.html">Expertise</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
         </header>
         <main>
+            <span class="navigationList" onclick="openNavigation()">&#9776;</span>
             <section class="masthead f-display">
                 <h1>Home</h1>
             </section>

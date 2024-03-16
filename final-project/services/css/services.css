@@ -1,0 +1,86 @@
+/*
+Color pallet:
+    #EE7E27 Orange
+    #F8F8F8 White
+    #000000 Black
+    #FF4500 OrangeRed
+*/
+
+/* Setting displays */
+.f-display {display: flex;}
+.g-display {display: grid;}
+
+/* Page background */
+html {
+    background-color: #000000;
+    color: #f8f8f8;
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+/*
+------------
+  Masthead
+------------
+*/
+.masthead {
+    height: 550px;
+    align-items: center;
+    justify-content: center;
+    background-color: #1f1f1f;
+}
+.masthead h1 {
+    font-size: 8em;
+    text-align: center;
+}
+
+/*
+-----------
+  Content
+-----------
+*/
+.services {
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: auto;
+    grid-template-columns: 100%;
+}
+.services section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 70%;
+    height: 458px;
+    text-align: center;
+    margin: 30px auto;
+    background-color: #EE7E27;
+
+    border-radius: 105px;
+    outline: #f8f8f8 solid 5px;
+}
+.services section a {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 25% 25%;
+
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
+}
+.services section h2 {
+    font-size: 5em;
+    text-align: center;
+}
+.services section p {
+    width: 60%;
+    height: auto;
+    font-size: 1.5em;
+    text-align: center;
+}

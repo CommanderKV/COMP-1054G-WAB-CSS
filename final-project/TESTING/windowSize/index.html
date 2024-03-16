@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Window Size</title>
+    <style>
+        html {
+            color: black;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Window Size</h1>
+    <p>Current Width: <span id="width"></span></p>
+    <p>Current Height: <span id="height"></span></p>
+
+    <script>
+        function updateWindowSize() {
+            document.getElementById('width').textContent = window.innerWidth;
+            document.getElementById('height').textContent = window.innerHeight;
+        }
+
+        // Initial update
+        updateWindowSize();
+
+        // Update on window resize
+        window.addEventListener('resize', updateWindowSize);
+    </script>
+</body>
+</html>

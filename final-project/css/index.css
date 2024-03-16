@@ -17,64 +17,9 @@ html {
     scroll-behavior: smooth;
 }
 
-/* Navigator */
-.navigation {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    width: 100%;
-    height: 100px;
-
-    background-color: #ee7e27;
-}
-.navigation nav {
-    padding-right: 2em;
-    overflow-x: hidden;
-}
-.navigation li {
-    list-style: none;
-    margin: 0px 10px;
-}
-.navigation li a {
-    color: #000000;
-    text-decoration: none;
-    font-size: 1.3em;
-    transition: color .25s linear;
-}
-.navigation a img {
-    margin-top: 5px;
-    margin-left: 10px;
-    height: 80px;
-    width: auto;
-}
 a {
     text-decoration: none;
     color: #000;
-}
-/* Header transition */
-.navigation li a:hover {
-    color: #f8f8f8;
-}
-.navigationList {
-    display: none;
-    visibility: hidden;
-    position: fixed;
-    height: auto;
-    width: 0px;
-    top: 35px;
-    left: 15px;
-    z-index: 1;
-    background-color: #111;
-    overflow-x: hidden;
-    transition: 0.5s;
-    font-size: 1.4em;
-
-    /* Background seeablity */
-    background-color: rgba(238, 126, 39, .9);
-    border-radius: 105px;
-    border-color: #f8f8f8;
-    border-width: 2px;
 }
 
 /*
@@ -89,7 +34,7 @@ a {
     background-color: #1f1f1f;
 }
 .masthead h1 {
-    font-size: 8em;
+    font-size: 128px;
     text-align: center;
 }
 
@@ -162,7 +107,7 @@ a {
 .home section:hover h2{
     left: 10px;
     margin-top: 47px;
-    font-size: 5em;
+    font-size: 80px;
 }
 .home section:hover p {
     visibility: visible;
@@ -210,13 +155,13 @@ a {
     align-items: center;
 }
 .services section h2 {
-    font-size: 5em;
+    font-size: 80px;
     text-align: center;
 }
 .services section p {
     width: 60%;
     height: auto;
-    font-size: 1.5em;
+    font-size: 24px;
     text-align: center;
 }
 /*
@@ -289,8 +234,7 @@ a {
 }
 
 
-@media (min-width: 768px){
-    .navigation {width: 100%;}
+@media (min-width: 1024px){
     .home section {
         display: flex;
         align-items: center;
@@ -316,8 +260,7 @@ a {
     }
 }
 
-@media (max-width: 770px) {
-    .navigation {width: 100%;}
+@media (max-width: 1000px) {
     .home section {
         display: flex;
         align-items: center;
@@ -327,91 +270,41 @@ a {
         width: 60%;
         height: 40%;
         margin: 3% 3%;
-        
-        pointer-events: none;
+    }
+    .home section:hover {
+        transform: scale(1);
+        margin: 3% 3%;
     }
     .home section h2 {
         font-size: 3em;
-        clip-path: (0 0 0 0);
+        clip-path: inset(0 0 0 0);
+        margin-bottom: 25px;
+    }
+    .home section:hover h2 {
+        left: auto;
+        margin-top: 39.84px;
+        font-size: 3em;
     }
     .home section p {
         visibility: visible;
         position: inherit;
-
         opacity: 1;
         font-size: 1.5em;
         width: 80%;
         height: auto;
         clip-path: inset(0 0 0 0);
+        margin-top: 0px;
+    }
+    .home section:hover p {
+        visibility: visible;
+        position: inherit;
+        clip-path: inset(0 0 0 0);
+        height: auto;
+        opacity: 1;
     }
 }
 
 @media (max-width: 525px) {
-    /* 
-    Put the Header on the left side of the screen 
-    and make it display over everything else
-    */
-    .navigation {
-        display: block;
-        position: fixed;
-        top: 0;
-        left: 0;
-        z-index: 1;
-        
-        height: 150%;
-        width: 0px;
-
-        align-items: baseline;
-
-        background-color: rgba(238, 126, 39, .9);
-        overflow-x: hidden;
-        overflow-y: hidden;
-        transition: 0.5s;
-    }
-    .navigation > a {
-        position: absolute;
-        top: 0;
-        right: 10px;
-        margin: 0;
-        width: auto;
-        height: auto;
-        display: flex;
-        justify-content: flex-end;
-    }
-    .navigation a img {
-        margin: 0px;
-        margin-top: 10px;
-        width: 70%;
-        height: auto;
-    }
-    .navigation nav {
-        padding-right: 0px;
-        margin-top: 30%;
-        height: 100%;
-        position: relative;
-    }
-    .navigation nav ul {
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-
-        padding: 0px;
-    }
-    .navigation nav ul a {
-        text-decoration: none;
-        font-size: 2em;
-        display: block;
-        transition: 0.3s;
-
-        padding: 20px 0px
-    }
-    .navigationList {
-        visibility: visible;
-        display: block;
-        width: auto;
-        background-color: transparent;
-        font-size: 1.4em;
-    }
     .home section:nth-child(even),
     .home section:nth-child(odd) {
         align-self: center;
@@ -419,4 +312,20 @@ a {
     }
 }
 
-
+@media (max-width: 320px) {
+    .masthead h1 {
+        font-size: 6em;
+    }
+    .home section h2 {
+        font-size: 2.5em;
+        margin-bottom: 10px;
+    }
+    .home section p {
+        font-size: 1.2em;
+        margin-top: 0px;
+        margin-bottom: 20px;
+    }
+    .home section {
+        border-radius: 70px;
+    }
+}

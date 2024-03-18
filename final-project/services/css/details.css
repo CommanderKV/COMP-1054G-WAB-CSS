@@ -1,0 +1,205 @@
+
+/*
+----------------
+  HTML styling
+----------------
+*/
+html {
+    background-color: #000000;
+    color: #f8f8f8;
+    scroll-behavior: smooth;
+}
+
+/* 
+------------
+  Masthead 
+------------
+*/
+
+.image-text-center {
+    position: relative;
+    height: auto;
+    width: 100%;
+
+    color: white;
+    text-align: center;
+
+    overflow: hidden;
+}
+.image-text-center > div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+    transform: translate(-50%, -50%);
+
+    width: 100%;
+    height: auto;
+}
+.image-text-center > img {
+    position: relative;
+    top: 50%;
+	left: 0;
+
+    height: auto;
+    width: 100%;
+}
+
+/*
+------------------
+  Welcome banner
+------------------
+*/
+.welcome {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+    width: 100%;
+    height: 100%;
+}
+.welcome-banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.welcome-banner h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+.welcome-banner p {
+    font-size: 1.5em;
+}
+
+/* 
+------------
+  Projects
+------------  
+*/
+.projects {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: auto;
+    
+    background: radial-gradient(orange, black);
+}
+/*
+.projects:nth-child(even) {
+    background: linear-gradient(to bottom, orange, black, orange);
+}
+.projects:nth-child(odd) {
+    background: linear-gradient(to bottom, orange, black, orange);
+}*/
+.projects > h3 {
+    font-size: 2em;
+    margin-bottom: 0px;
+    margin-top: 40px;
+}
+.projects > div {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    margin: 40px;
+}
+.projects > div > p {
+    font-size: 1.5em;
+    width: 250px;
+}
+.projects > div > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+.projects > div > div > p {
+    font-size: 1.5em;
+}
+.projects > div > div > ul {
+    list-style-type: disc;
+    padding: 0;
+    margin: 0;
+}
+.projects > div > div > ul > li {
+    font-size: 1.5em;
+    margin-bottom: 5px;
+}
+
+/*
+-------------------
+  Github previews
+-------------------
+*/
+.git-preview {
+    cursor: pointer;
+}
+.git-preview > a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    text-decoration: none;
+    
+    background: black;
+    border-radius: 30px;
+    padding: 15px;
+}
+.git-preview > a > img {
+    margin-bottom: 4px;
+}
+.git-preview > a > div > h4 {
+    font-size: 1.5em;
+    margin-top: 0px;
+    margin-bottom: 0px;
+
+    color: #f8f8f8;
+}
+
+/* Bigger than laptop  */
+@media (min-width: 1024px) {
+	.masthead h1 {
+		font-size: 8em;
+	}
+	.image-text-center > div > h4 {
+		font-size: auto;
+	}
+}
+
+/* Laptop */
+@media (max-width: 1024px) {
+	.masthead h1 {
+		font-size: 6em;
+	}
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+	.masthead h1 {
+		font-size: 4em;
+	}
+}
+
+/* Navigation bar turned to sidebar */
+@media (max-width: 525px) {
+	.masthead h1 {
+		font-size: 2.6em;
+	}
+}
+
+/* Mobile */
+@media (max-width: 320px) {
+	.masthead h1 {
+		font-size: 2em;
+	}
+}

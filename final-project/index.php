@@ -2,19 +2,14 @@
 
 <html lang="en">
     <head>
-        <meta charset="utf-8" />
-        <title>Kyler V - Portfolio</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        <link href="css/normalize.css" rel="stylesheet"/>
+        <?php require "includes/head.html"; ?>
+
         <link href="css/index.css" rel="stylesheet" type="text/css"/>
-        <link href="/Kyler/final-project/css/navigation.css" rel="stylesheet" type="text/css"/>
-        <link rel="icon" type="image/x-icon" href="/Kyler/final-project/imgs/favicon.ico">
-        <script src="js/sidebar.js" defer></script>
         <script src="js/scripts.js" defer></script>
     </head>
     <body>
         <header class="f-display">
-            <?php require("includes/header.html")?>
+            <?php require "includes/header.html"; ?>
         </header>
         <main>
             <span class="navigationList" onclick="toggleNavigation()">&#9776;</span>

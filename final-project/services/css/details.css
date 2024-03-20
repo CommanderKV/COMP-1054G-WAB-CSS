@@ -86,18 +86,24 @@ html {
     justify-content: center;
     align-items: center;
 
-    width: 100%;
+    width: 95%;
     height: auto;
+    margin: 20px;
+
+    background-color: #ee7e27;
     
-    background: radial-gradient(orange, black);
+    border-color: #f8f8f8;
+    border-radius: 150px;
+
+    border-bottom-style: solid;
+    border-bottom-width: 6px;
+
+    border-left-width: 3px;
+    border-left-style: solid;
+
+    border-right-width: 3px;
+    border-right-style: solid;
 }
-/*
-.projects:nth-child(even) {
-    background: linear-gradient(to bottom, orange, black, orange);
-}
-.projects:nth-child(odd) {
-    background: linear-gradient(to bottom, orange, black, orange);
-}*/
 .projects > h3 {
     font-size: 2em;
     margin-bottom: 0px;

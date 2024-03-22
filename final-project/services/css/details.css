@@ -118,6 +118,7 @@ html {
 }
 .projects > div > p {
     font-size: 1.5em;
+    text-align: center;
     width: 250px;
 }
 .projects > div > div {
@@ -201,6 +202,7 @@ html {
 	.masthead h1 {
 		font-size: 2.6em;
 	}
+    /* Adjust content to mobile / vertical */
 }
 
 /* Mobile */

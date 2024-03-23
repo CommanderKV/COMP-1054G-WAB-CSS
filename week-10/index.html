@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="This week we will be looking at different interface components">
+    <meta name="robots" content="noindex, nofollow">
+    <title>Interface Components</title>
+    <!-- add our js -->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <script src="./js/custom-js.js"></script>
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/8be9f1da93.js" crossorigin="anonymous"></script>
+    <!-- css -->
+    <link rel="stylesheet" href="./css/style.css">
+  </head>
+  <body>
+    <header>
+      <div class="logo-container">
+        <a href="index.html">
+          <img src="./img/light-logo.png" alt="header logo">
+        </a>
+      </div>
+      <nav>
+        <label>
+          <input type="checkbox">
+          <span class="menu"> <span class="hamburger"></span> </span>
+          <menu>
+            <li> <a href="#">Home</a> </li>
+            <li> <a href="#">About</a> </li>
+            <li> <a href="#">Contact</a> </li>
+          </menu>
+        </label>
+      </nav>
+    </header>
+    <main>
+      <section class="masthead">
+        <div>
+          <h1><span>Interface</span> Components</h1>
+        </div>
+      </section>
+      <section class="lesson-row-one">
+        <!-- Our first row will contain our first call to action. A call to action is a section of content where we are prompting a user to complete an action. In our example (restaurant) our call to action will prompt the user to view our menus -->
+        <div class="cta cta-1">
+          <div>
+            <label class="btn" for="modal-1">Breakfast Menu</label>
+            <input class="modal-state" id="modal-1" type="checkbox" />
+            <div class="modal">
+              <label class="modal__bg" for="modal-1"></label>
+              <div class="modal__inner">
+                <label class="modal__close" for="modal-1"></label>
+                <h2>Caaaats FTW!</h2>
+                <p><img src="https://i.imgur.com/HnrkBwB.gif" alt="" />Aliquam in sagittis nulla. Curabitur euismod diam eget risus venenatis, sed dictum lectus bibendum. Nunc nunc nisi, hendrerit eget nisi id, rhoncus rutrum velit. Nunc vel mauris dolor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aliquam fringilla quis nisi eget imperdiet.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="cta cta-2">
+          <div>
+            <label class="btn" for="modal-2">Dinner Menu</label>
+            <input class="modal-state" id="modal-2" type="checkbox" />
+            <div class="modal">
+              <label class="modal__bg" for="modal-2"></label>
+              <div class="modal__inner">
+                <label class="modal__close" for="modal-2"></label>
+                <h2>Caaaats FTW!</h2>
+                <p><img src="https://i.imgur.com/HnrkBwB.gif" alt="" />Aliquam in sagittis nulla. Curabitur euismod diam eget risus venenatis, sed dictum lectus bibendum. Nunc nunc nisi, hendrerit eget nisi id, rhoncus rutrum velit. Nunc vel mauris dolor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aliquam fringilla quis nisi eget imperdiet.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="cta cta-3">
+          <div>
+            <label class="btn" for="modal-3">Drinks Menu</label>
+            <input class="modal-state" id="modal-3" type="checkbox" />
+            <div class="modal">
+              <label class="modal__bg" for="modal-3"></label>
+              <div class="modal__inner">
+                <label class="modal__close" for="modal-3"></label>
+                <h2>Caaaats FTW!</h2>
+                <p><img src="https://i.imgur.com/HnrkBwB.gif" alt="" />Aliquam in sagittis nulla. Curabitur euismod diam eget risus venenatis, sed dictum lectus bibendum. Nunc nunc nisi, hendrerit eget nisi id, rhoncus rutrum velit. Nunc vel mauris dolor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aliquam fringilla quis nisi eget imperdiet.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="lesson-row-two">
+        <!-- add some animated tabs -->
+        <input id="tab1" type="radio" name="tabs" checked>
+        <label for="tab1">Our Ingredients</label>
+
+        <input id="tab2" type="radio" name="tabs">
+        <label for="tab2">Our Dinning Room</label>
+
+        <input id="tab3" type="radio" name="tabs">
+        <label for="tab3">Events</label>
+
+        <input id="tab4" type="radio" name="tabs">
+        <label for="tab4">Reservations</label>
+        <div class="tab-content" id="content1">
+          <p>
+            Bacon ipsum dolor sit amet beef venison beef ribs kielbasa. Sausage pig leberkas, t-bone sirloin shoulder bresaola. Frankfurter rump porchetta ham. Pork belly prosciutto brisket meatloaf short ribs.
+          </p>
+          <p>
+            Brisket meatball turkey short loin boudin leberkas meatloaf chuck andouille pork loin pastrami spare ribs pancetta rump. Frankfurter corned beef beef tenderloin short loin meatloaf swine ground round venison.
+          </p>
+        </div>
+
+        <div class="tab-content" id="content2">
+          <p>
+            Bacon ipsum dolor sit amet landjaeger sausage brisket, jerky drumstick fatback boudin ball tip turducken. Pork belly meatball t-bone bresaola tail filet mignon kevin turkey ribeye shank flank doner cow kielbasa shankle. Pig swine chicken hamburger, tenderloin turkey rump ball tip sirloin frankfurter meatloaf boudin brisket ham hock. Hamburger venison brisket tri-tip andouille pork belly ball tip short ribs biltong meatball chuck. Pork chop ribeye tail short ribs, beef hamburger meatball kielbasa rump corned beef porchetta landjaeger flank. Doner rump frankfurter meatball meatloaf, cow kevin pork pork loin venison fatback spare ribs salami beef ribs.
+          </p>
+          <p>
+            Jerky jowl pork chop tongue, kielbasa shank venison. Capicola shank pig ribeye leberkas filet mignon brisket beef kevin tenderloin porchetta. Capicola fatback venison shank kielbasa, drumstick ribeye landjaeger beef kevin tail meatball pastrami prosciutto pancetta. Tail kevin spare ribs ground round ham ham hock brisket shoulder. Corned beef tri-tip leberkas flank sausage ham hock filet mignon beef ribs pancetta turkey.
+          </p>
+        </div>
+
+        <div class="tab-content" id="content3">
+          <p>
+            Bacon ipsum dolor sit amet beef venison beef ribs kielbasa. Sausage pig leberkas, t-bone sirloin shoulder bresaola. Frankfurter rump porchetta ham. Pork belly prosciutto brisket meatloaf short ribs.
+          </p>
+          <p>
+            Brisket meatball turkey short loin boudin leberkas meatloaf chuck andouille pork loin pastrami spare ribs pancetta rump. Frankfurter corned beef beef tenderloin short loin meatloaf swine ground round venison.
+          </p>
+        </div>
+
+        <div class="tab-content" id="content4">
+          <p>
+            Bacon ipsum dolor sit amet landjaeger sausage brisket, jerky drumstick fatback boudin ball tip turducken. Pork belly meatball t-bone bresaola tail filet mignon kevin turkey ribeye shank flank doner cow kielbasa shankle. Pig swine chicken hamburger, tenderloin turkey rump ball tip sirloin frankfurter meatloaf boudin brisket ham hock. Hamburger venison brisket tri-tip andouille pork belly ball tip short ribs biltong meatball chuck. Pork chop ribeye tail short ribs, beef hamburger meatball kielbasa rump corned beef porchetta landjaeger flank. Doner rump frankfurter meatball meatloaf, cow kevin pork pork loin venison fatback spare ribs salami beef ribs.
+          </p>
+          <p>
+            Jerky jowl pork chop tongue, kielbasa shank venison. Capicola shank pig ribeye leberkas filet mignon brisket beef kevin tenderloin porchetta. Capicola fatback venison shank kielbasa, drumstick ribeye landjaeger beef kevin tail meatball pastrami prosciutto pancetta. Tail kevin spare ribs ground round ham ham hock brisket shoulder. Corned beef tri-tip leberkas flank sausage ham hock filet mignon beef ribs pancetta turkey.
+          </p>
+        </div>
+      </section>
+      <section class="lesson-row-three">
+        <!-- our contact CTA -->
+        <div>
+          <h4>We Want To Hear From You</h4>
+          <a href="index.html">Contact Us</a>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <section class="top-footer">
+        <div class="footer-logo">
+          <a href="index.html">
+            <img src="./img/light-logo.png" alt="footer logo">
+          </a>
+        </div>
+        <div class="footer-about">
+          <h6>Footer Title</h6>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid aperiam excepturi in modi nostrum repudiandae. Blanditiis eaque esse explicabo inventore laboriosam nostrum officia placeat quaerat!</p>
+        </div>
+        <div class="footer-form">
+          <form method="post" action="">
+            <p><input type="text" placeholder="Name"></p>
+            <p><input type="email" placeholder="Email"></p>
+            <input type="submit" value="send">
+          </form>
+        </div>
+      </section>
+      <section class="bottom-footer">
+        <p>Website Created By: Jeremy McCulley</p>
+      </section>
+    </footer>
+  </body>
+</html>

@@ -28,10 +28,18 @@ a {
 ------------
 */
 .masthead {
-    height: 550px;
+    height: 90vh;
     align-items: center;
     justify-content: center;
+    background: linear-gradient(
+        rgba(0, 0, 0, 0), 
+        rgba(0, 0, 0, 0),
+        rgba(248, 248, 248, 1)
+    ), 
+    url("../imgs/home-banner.jpg");
     background-color: #1f1f1f;
+    background-size: cover;
+    background-position: center;
 }
 .masthead h1 {
     font-size: 128px;
@@ -45,13 +53,20 @@ a {
 */
 .home {
     padding-top: 30px;
+    padding-bottom: 30px;
     height: 100%;
     display: flex;
     justify-content: left;
     flex-direction: column;
+
+    background: linear-gradient(
+        rgba(248, 248, 248, 1),
+        rgba(0, 0, 0, 0),
+        rgba(0, 0, 0, 0),
+        rgba(0, 0, 0, 0)
+    )
 }
 .home div {
-    background-color: #EE7E27;
     outline: #f8f8f8 solid 5px;
     border-radius: 105px;
     color: #000000;
@@ -60,6 +75,38 @@ a {
 
     transition-duration: .7s;
     transition-timing-function: ease-in-out;
+
+    
+    background-color: #EE7E27;
+    background-size: cover;
+    background-position: center;
+}
+.home div:nth-child(1) {
+    background-image: 
+    linear-gradient(
+        rgba(0, 0, 0, 0.4), 
+        rgba(0, 0, 0, 0.8)
+    ),
+    url("../imgs/about-img-banner.jpg");
+    color: white;
+}
+.home div:nth-child(2) {
+    background-image: 
+    linear-gradient(
+        rgba(0, 0, 0, 0.4), 
+        rgba(0, 0, 0, 0.8)
+    ),
+    url("../imgs/expertise-banner.jpg");
+    color: white;
+}
+.home div:nth-child(3) {
+    background-image: 
+    linear-gradient(
+        rgba(0, 0, 0, 0.4), 
+        rgba(0, 0, 0, 0.8)
+    ),
+    url("../imgs/programming-banner.webp");
+    color: white;
 }
 .home div:nth-child(even) {
     align-self: flex-end;
@@ -121,59 +168,6 @@ a {
     height: auto;
     opacity: 1;
 }
-
-
-/*
----------
-  About
----------
-*/
-
-.about-section {
-    width: 90%;
-    height: auto;
-    margin: 40px auto;
-
-    border-radius: 105px;
-
-    background-color: #EE7E27;
-}
-.about-section section {
-    position: relative;
-    text-align: center;
-}
-.about-section section img {
-    width: 99%;
-    height: auto;
-
-    border-radius: 105px;
-
-    object-fit: cover;
-    z-index: 1;
-}
-.about-section section div {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-}
-.full-section {
-    display: flex;
-
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-
-    width: 100%;
-    height: auto;
-}
-.half-section {
-    position: relative;
-    grid-template-columns: 50% 50%;
-    width: 100%;
-    height: auto;
-}
-
 
 @media (min-width: 1024px){
     .home div {
@@ -242,6 +236,12 @@ a {
         clip-path: inset(0 0 0 0);
         height: auto;
         opacity: 1;
+    }    
+}
+
+@media (max-width: 768px) {
+    .masthead h1 {
+        font-size: 10em;
     }
 }
 
@@ -251,11 +251,19 @@ a {
         align-self: center;
         width: 85%;
     }
+
+    /* Adjust masthead */
+    .masthead {
+        height: 100vh;
+    }
+    .masthead h1 {
+        font-size: 6em;
+    }
 }
 
 @media (max-width: 320px) {
     .masthead h1 {
-        font-size: 6em;
+        font-size: 5em;
     }
     .home div h2 {
         font-size: 2.5em;
@@ -268,5 +276,6 @@ a {
     }
     .home div {
         border-radius: 70px;
+        pointer-events: none;
     }
 }

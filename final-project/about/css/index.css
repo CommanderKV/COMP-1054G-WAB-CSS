@@ -1,0 +1,45 @@
+
+.about-section {
+    width: 90%;
+    height: auto;
+    margin: 40px auto;
+
+    border-radius: 105px;
+
+    background-color: #EE7E27;
+}
+.about-section section {
+    position: relative;
+    text-align: center;
+}
+.about-section section img {
+    width: 99%;
+    height: auto;
+
+    border-radius: 105px;
+
+    object-fit: cover;
+    z-index: 1;
+}
+.about-section section div {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.full-section {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    width: 100%;
+    height: auto;
+}
+.half-section {
+    position: relative;
+    grid-template-columns: 50% 50%;
+    width: 100%;
+    height: auto;
+}

@@ -1,0 +1,79 @@
+/*
+--------------------------
+  Call to action styling
+--------------------------
+*/
+.call-to-action {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+    width: 100%;
+    height: auto;
+
+    background-color: #f8f8f8;
+}
+.call-to-action div {
+    width: 230px;
+    height: 300px;
+    border: 2px solid black;
+    border-radius: 15%;
+
+    cursor: pointer;
+    margin: 20px;
+
+    box-shadow: 3px 3px 5px black;
+    transition: .25s ease-in-out;
+}
+.call-to-action div a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    margin: 10px;
+    height: 100%;
+
+    text-decoration: none;
+    color: black;
+    text-align: center;
+}
+.call-to-action div a svg {
+    width: 100px;
+    height: auto;
+
+    margin-bottom: 25px;
+}
+.call-to-action div a p {
+    font-size: 1.3em;
+    width: 80%;
+    margin: 0px;
+    margin-bottom: 5px;
+}
+.call-to-action div a h2 {
+    font-size: 2em;
+    margin: 0px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.call-to-action div:hover {
+    transform: scale(1.1);
+}
+
+@media (max-width: 1000px) {
+    /* Adjust call-to-action items */
+    .call-to-action div {
+        width: 100%;
+    }
+}
+
+@media (max-width: 525px) {
+    /* Adjust call to action and its components */
+    .call-to-action {
+        flex-direction: column;
+    }
+    .call-to-action div {
+        width: 80%;
+        pointer-events: none;
+    }
+}

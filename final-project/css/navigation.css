@@ -113,7 +113,7 @@
 }
 
 /* Adjust navigation to be used on mobile */
-@media (max-width: 525px) {
+@media (max-width: 600px) {
     /* 
     Put the Header on the left side of the screen 
     and make it display over everything else

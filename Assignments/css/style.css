@@ -1,0 +1,149 @@
+/* Import custom font */
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+html {
+    background-color: #f8f8f8;
+    font-family: "Josefin Sans", sans-serif;
+}
+body {
+    padding: 0;
+    margin: 0;
+}
+
+/* Navigation styles */
+.navigation {
+    height: 100px;
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding-top: 10px;
+    background-color: #d12030;
+}
+.navigation div a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.4em;
+    padding: 0px 5px;
+}
+
+/* masthead */
+.masthead {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    padding-bottom: 10rem;
+
+    background-image: linear-gradient(
+        rgba(209, 32, 48, 1) 70%,
+        rgba(248, 248, 248, 1)
+    );
+    
+    color: white;
+}
+.masthead video {
+    width: auto;
+    height: auto;
+}
+
+/* Call to action */
+.callToAction {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2rem;
+
+    background: linear-gradient(
+        rgba(248, 238, 248, 1) 70%,
+        rgba(248, 248, 248, 0)
+    );
+}
+.callToAction div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+}
+.callToAction div a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    color: black;
+    text-decoration: none;
+}
+
+/* Main content styling */
+.mainContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    color: black;
+}
+
+.mainContent > div {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    padding: 2rem;
+}
+.mainContent > div > div {
+    width: 30%;
+    text-align: center;
+}
+.mainContent > div > div > h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+.mainContent > div > div > p {
+    margin: 0px;
+    font-size: 1.2em;
+}
+
+/* Nutritional facts */
+#facts {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Footer */
+footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    color: white;
+    padding: 15px;
+    background-color: #d12030;
+}
+footer div {
+    width: 40%;
+    text-align: center;
+    font-size: 1.2em;
+}
+footer div p {
+    margin: 0;
+}
+footer form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+footer form input {
+    margin: 2px;
+}
+footer form h3 {
+    font-size: 1.6em;
+    margin-bottom: 10px;
+}

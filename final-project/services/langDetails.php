@@ -3,10 +3,14 @@
 
     // Setup page variables
     if (!empty($_GET["lang"])) {
+        $db = new DBConn();
+        $description = $db->getDesc($_GET["lang"]);
+
         $extraStyle = "";
         switch ($_GET["lang"]) {
-            case "py":
+            case "python":
                 $name = "Python";
+                $sqlName = "Python";
                 $headerText = "Python development";
                 $headerImg = "../imgs/python-banner.png";
                 $extraStyle = "; background-repeat: repeat; background-size: initial; background-position: initial;";
@@ -14,29 +18,35 @@
             
             case "web":
                 $name = "Website";
+                $sqlName = "WEB";
                 $headerText = "Website development";
                 $headerImg = "../imgs/web-banner.webp";
                 break;
             
             case "cpp":
                 $name = "C++";
+                $sqlName = "CPP";
                 $headerText = "C++ development";
                 $headerImg = "../imgs/cpp-banner.webp";
                 break;
             
             case "php":
                 $name = "PHP";
+                $sqlName = "PHP";
                 $headerText = "PHP development";
                 $headerImg = "";
                 break;
             
             case "java":
                 $name = "Java";
+                $sqlName = "java";
                 $headerText = "Java development";
                 $headerImg = "../imgs/java-banner.png";
                 break;
         }
         $style = "background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(248, 248, 248, 1)), url('" . $headerImg . "')" . $extraStyle;
+    
+    // If no languge is specified, redirect to index.php with an error
     } else {
         header("Location: index.php?error=invalidLang");
     }
@@ -74,12 +84,7 @@
             <section class="welcome">
                 <div class="welcome-banner">
                     <h2>Experience</h2>
-                    <p>I have <?php 
-                        $date1 = new DateTime("2016-00-00");
-                        $date2 = new DateTime("now");
-                        $diff = $date1->diff($date2);
-                        echo $diff->y;
-                    ?> years of experience in <?php echo $name; ?> some of the projects that I've worked on are as follows</p>
+                    <p><?php echo $description; ?></p>
                 </div>
                 <?php 
                     $structure = '
@@ -109,7 +114,7 @@
                     $conn = new DBConn();
 
                     // Pull data from database
-                    $projects = $conn->getProjects($name);
+                    $projects = $conn->getProjects($sqlName);
 
                     // Loop through data and echo filled 
                     // out structure for each project

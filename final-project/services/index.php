@@ -37,7 +37,7 @@
                 </div>
             </section>
             <section class="services g-display">
-                <a href="langDetails.php?lang=py">
+                <a href="langDetails.php?lang=python">
                     <section id="py-dev">
                         <h2>Python development</h2>
                         <p>I will build you a python program of varying complexity given a design or requirements</p>

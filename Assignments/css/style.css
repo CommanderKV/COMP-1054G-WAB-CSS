@@ -34,7 +34,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 2rem;
     padding-bottom: 10rem;
 
     background-image: linear-gradient(
@@ -45,7 +44,7 @@ body {
     color: white;
 }
 .masthead video {
-    width: auto;
+    width: 100%;
     height: auto;
 }
 
@@ -76,6 +75,8 @@ body {
 
     color: black;
     text-decoration: none;
+
+    margin: 15px;
 }
 
 /* Main content styling */
@@ -89,14 +90,16 @@ body {
 }
 
 .mainContent > div {
+    width: 100%;
+
     display: flex;
     justify-content: space-around;
     align-items: center;
 
-    padding: 2rem;
+    padding: 2rem 0;
 }
 .mainContent > div > div {
-    width: 30%;
+    width: 14rem;
     text-align: center;
 }
 .mainContent > div > div > h2 {
@@ -127,12 +130,17 @@ footer {
     background-color: #d12030;
 }
 footer div {
-    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
     text-align: center;
     font-size: 1.2em;
 }
 footer div p {
     margin: 0;
+    width: 20rem;
 }
 footer form {
     display: flex;
@@ -146,4 +154,38 @@ footer form input {
 footer form h3 {
     font-size: 1.6em;
     margin-bottom: 10px;
+}
+
+@media (max-width: 425px) {
+    .navigation {
+        flex-direction: column;
+        height: auto;
+    }
+    .callToAction {
+        flex-direction: column;
+    } 
+    .mainContent > div {
+        flex-direction: column;
+    }
+    .mainContent > div:nth-child(2) {
+        flex-direction: column-reverse;
+    }
+
+    footer {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 320px) {
+    .navigation > img {
+        width: 100%;
+        height: auto;
+    }
+    .navigation div a {
+        font-size: 1.2em;
+    }
+    footer > div > img {
+        width: 100%;
+        height: auto;
+    }
 }

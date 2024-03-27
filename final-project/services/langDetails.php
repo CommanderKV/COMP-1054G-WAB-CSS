@@ -46,7 +46,7 @@
         }
         $style = "background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(248, 248, 248, 1)), url('" . $headerImg . "')" . $extraStyle;
     
-    // If no languge is specified, redirect to index.php with an error
+    // If no language is specified, redirect to index.php with an error
     } else {
         header("Location: index.php?error=invalidLang");
     }

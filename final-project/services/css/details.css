@@ -63,8 +63,8 @@ html {
     align-items: center;
     text-align: center;
 
-    padding-left: 10px;
-    padding-right: 10px;
+    padding: 0 10px;
+    margin: 0 10px;
 
     color: black;
     background: #ee7e27;
@@ -109,6 +109,7 @@ html {
     border-right-style: solid;
 }
 .projects > h3 {
+    text-align: center;
     font-size: 2em;
     margin-bottom: 0px;
     margin-top: 40px;
@@ -198,12 +199,28 @@ html {
 	}
 }
 
+/* Adjust content to mobile / vertical */
+@media (max-width: 700px) {
+    .projects {
+        border-radius: 70px;
+        border-left-style: none;
+        border-right-style: none;
+    }
+    .projects > div {
+        margin-top: 5px;
+        flex-direction: column;
+    }
+    .projects > div > p {
+        width: 90%;
+        margin-bottom: 5px;
+    }
+}
+
 /* Navigation bar turned to sidebar */
 @media (max-width: 525px) {
 	.masthead h1 {
 		font-size: 2.6em;
 	}
-    /* Adjust content to mobile / vertical */
 }
 
 /* Mobile */

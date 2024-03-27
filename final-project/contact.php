@@ -2,16 +2,11 @@
 
 <html>
     <head>
-        <meta charset="utf-8" />
-        <title>Kyler V - Contact</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        <link href="css/normalize.css" rel="stylesheet"/>
-        <link href="css/styles.css" rel="stylesheet" type="text/css">
-        <link href="/Kyler/final-project/css/navigation.css" rel="stylesheet" type="text/css"/>
+        <?php require "includes/head.html"; ?>
     </head>
     <body>
         <header class="f-display">
-            <?php require("includes/header.html")?>
+            <?php require "includes/header.html"; ?>
         </header>
         
         <main>
@@ -34,7 +29,7 @@
         </main>
         
         <footer>
-            <?php require("includes/footer.html")?>
+            <?php require "includes/footer.html"; ?>
         </footer>
     </body>
 </html>

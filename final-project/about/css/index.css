@@ -1,4 +1,30 @@
+html {
+    background-color: black;
+}
+.g-display {
+    display: grid;
+}
+.f-display {
+    display: flex;
+}
 
+/* Masthead */
+.masthead {
+    height: 90vh;
+    align-items: center;
+    justify-content: center;
+    background: url("../../imgs/about-img-banner.jpg");
+    background-color: #1f1f1f;
+    background-size: cover;
+    background-position: center;
+}
+.masthead h1 {
+    font-size: 10em;
+    text-align: center;
+    color: white;
+}
+
+/* General styling */
 .about-section {
     width: 90%;
     height: auto;
@@ -7,25 +33,49 @@
     border-radius: 105px;
 
     background-color: #EE7E27;
+
+    color: white;
 }
-.about-section section {
+.about-section a section {
     position: relative;
     text-align: center;
 }
-.about-section section img {
-    width: 99%;
+.about-section a section img {
+    width: 95%;
     height: auto;
+    margin: 5px;
 
     border-radius: 105px;
 
     object-fit: cover;
     z-index: 1;
+
+    transition: all .5s ease-in-out;
 }
-.about-section section div {
+.about-section a section div {
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+}
+.about-section a section div p {
+    width: 90%;
+    margin: 0;
+    margin-top: 5px;
+    opacity: 0;
+    transition: all .5s ease-in-out;
+}
+.about-section a section div h2 {
+    margin: 0;
+}
+.about-section a section div h3 {
+    margin: 5px;
+}
+.about-section a section:hover img {
+    filter: brightness(50%);
+}
+.about-section a section:hover div p {
+    opacity: 1;
 }
 .full-section {
     display: flex;
@@ -42,4 +92,248 @@
     grid-template-columns: 50% 50%;
     width: 100%;
     height: auto;
+}
+
+/* Hobbies */
+.about-section > a > section > div h2 {
+    margin: 0;
+}
+.about-section > a > section > div p {
+    margin: 0;
+    margin-top: 5px;
+}
+
+/* Education */
+.half-section > a > section > img {
+    background-color: #1f1f1f;
+    object-fit: cover;
+    z-index: 1;
+    transition: all .5s ease-in-out;
+}
+.half-section > a > section:hover > img {
+    filter: brightness(50%);
+}
+.half-section > a > section > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    
+    transform: translate(-50%, -50%);
+
+    width: 100%;
+}
+.half-section > a > section > div > p {
+    opacity: 0;
+    transition: all .5s ease-in-out;
+}
+
+
+/* RH image modification */
+#regent-heights > img {
+    filter: brightness(80%);
+    transition: all .5s ease-in-out;
+}
+#regent-heights:hover > img {
+    filter: brightness(50%);
+}
+
+/* LUGC image modification */
+#lakehead-georgian > img {
+    height: 350px;
+    object-fit: contain;
+    object-position: center;
+    background-color: white;
+    filter: brightness(70%);
+}
+#lakehead-georgian:hover > img {
+    filter: brightness(50%);
+}
+
+/* Bayview image modification */
+#bayview > img {
+    height: 400px;
+    object-fit: contain;
+    object-position: center;
+    background-color: white;
+    filter: brightness(70%);
+}
+#bayview:hover > img {
+    filter: brightness(50%);
+}
+
+@media (min-width: 1025px) {
+    #hobbies > a > section > div > h2 {
+        font-size: 9.1em;
+    }
+
+    .about-section > a > section > div h2 {
+        font-size: 6em;
+    }
+    .about-section > a > section > div h3 {
+        font-size: 2.8em;
+    }
+    .about-section > a > section > div p {
+        font-size: 2em;
+    }
+
+    .half-section > a > section > div > h2 {
+        font-size: 3em;
+    }
+    .half-section > a > section > div > h3 {
+        font-size: 2em;
+    }
+    .half-section > a > section > div > p {
+        width: 70%;
+        font-size: 1.5em;
+    }
+}   
+
+@media (max-width: 1024px) {
+    .about-section > a > section > div h2 {
+        font-size: 5.4em;
+    }
+    .about-section > a > section > div h3 {
+        font-size: 3em;
+    }
+    .about-section > a > section > div p {
+        font-size: 2em;
+    }
+
+    .half-section > a > section > div > h2 {
+        font-size: 3em;
+    }
+    .half-section > a > section > div > h3 {
+        font-size: 2em;
+    }
+    .half-section > a > section > div > p {
+        width: 80%;
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 900px) {
+    .about-section > a > section > div h2 {
+        font-size: 4.6em;
+    }
+    .half-section > a > section > div > h2 {
+        font-size: 2.5em;
+    }
+}
+
+@media (max-width: 768px) {
+    /* Adjust about sections */
+    .about-section > a > section > div > h2 {
+        font-size: 2.8em;
+    }
+    .about-section > a > section > div > h3 {
+        font-size: 2.5em;
+    }
+    .about-section > a > section > div > p {
+        font-size: 1.5em;
+    }
+
+    /* Adjust half sections */
+    .half-section > a > section > div > h2 {
+        font-size: 2em;
+    }
+    .half-section > a > section > div > h3 {
+        font-size: 1.5em;
+    }
+    .half-section > a > section > div > p {
+        font-size: 1em;
+    }
+}
+
+/* Make everything mobile friendly */
+@media (max-width: 700px) {
+    .masthead h1 {
+        font-size: 7em;
+    }
+
+    .about-section > a > section > div h2 {
+        font-size: 3em;
+    }
+    .about-section > a > section > img {
+        filter: brightness(70%);
+    }
+    .about-section a section,
+    .half-section a section {
+        pointer-events: none;
+    }
+    .about-section > a > section > div p,
+    .half-section > a > section > div p  {
+        font-size: 1em;
+        width: 80%;
+        opacity: 1;
+    }
+
+    .about-section {
+        border-radius: 90px;
+    }
+
+    .half-section {
+        grid-template-columns: 100%;
+        grid-template-rows: 50% 50%;
+    }
+
+    #lakehead-georgian > img,
+    #bayview > img {
+        height: 200px;
+    }
+}
+
+@media (max-width: 500px) {
+    .masthead h1 {
+        font-size: 5em;
+    }
+    .about-section > a > section > div h2 {
+        font-size: 1.8em;
+    }
+    .about-section > a > section > div h3 {
+        font-size: 1.5em;
+    }
+    .about-section > a > section > div p {
+        font-size: 1.2em;
+    }
+    .about-section-georgian > img {
+        height: 200px;
+    }
+    .about-section > img {
+        height: 300px;
+    }
+}
+
+@media (max-width: 320px) {
+    .about-section > a > section > div h2 {
+        font-size: 1.5em;
+    }
+    .about-section > a > section > div p {
+        font-size: 1em;
+    }
+    
+    .half-section > a > section > div > h2 {
+        font-size: 1.6em;
+    }
+    .half-section > a > section > div > h3 {
+        font-size: 1.2em;
+    }
+    .half-section > a > section > div > p {
+        font-size: 0.8em;
+    }
+
+    .masthead h1 {
+        font-size: 4em;
+    }
+
+    #lakehead-georgian > img {
+        height: 150px;
+    }
+    #bayview > img {
+        height: 150px;
+    }
 }

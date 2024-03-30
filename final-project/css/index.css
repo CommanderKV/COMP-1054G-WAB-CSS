@@ -5,7 +5,7 @@ Color pallet:
     #000000 Black
     #FF4500 OrangeRed
 */
-
+@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@400..700&family=League+Spartan:wght@100..900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
 /* Setting displays */
 .f-display {display: flex;}
 .g-display {display: grid;}
@@ -15,6 +15,7 @@ html {
     background-color: #000000;
     color: #f8f8f8;
     scroll-behavior: smooth;
+    font-family: "League Spartan", sans-serif;
 }
 
 a {
@@ -119,7 +120,7 @@ a {
 
     text-wrap: nowrap;
     text-align: center;
-    text-decoration: underline;
+    text-decoration: none;
 
     transition-property: font-size, transform, left;
     transition-duration: .7s;

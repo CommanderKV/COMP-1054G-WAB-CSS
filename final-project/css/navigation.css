@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@400..700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
 
 .f-display {
     display: flex;
@@ -17,6 +18,10 @@
     height: 100px;
 
     background-color: #ee7e27;
+
+    font-family: "Merriweather";
+    font-weight: 400;
+    font-style: normal;
 }
 /* Page navigation */
 .navigation nav {
@@ -197,10 +202,10 @@
     }
     .dropdown {
         display: none;
-        justify-content: flex-end;
-        align-items: flex-end;
+        justify-content: center;
+        align-items: center;
         flex-direction: column;
-        width: 85%
+        width: 100%
     }
     .dropdown li a {
         padding: 0px;

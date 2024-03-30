@@ -1,0 +1,90 @@
+footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer > .socials {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: auto;
+}
+footer > .socials > h2 {
+    margin-bottom: 5px;
+    text-align: center;
+    font-size: 2.6em;
+    color: white;
+}
+footer > .socials > a {
+    text-decoration: none;
+}
+footer > .socials > a > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: auto;
+    background-color: #f8f8f8;
+    color: black;
+    border-radius: 15px;
+    margin-bottom: 5px;
+}
+footer > .socials > a > div > h3 {
+    color: black;
+}
+footer > .socials > a > div > img {
+    width: 50px;
+    height: auto;
+    margin: 10px;
+}
+
+footer > .contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: auto;
+}
+footer > .contact > a {
+    width: 120px;
+    height: 30px;
+    
+    background-color: #f8f8f8;
+    color: black; 
+
+    margin-bottom: 5px;
+    text-align: center;
+
+    border-radius: 15px;
+    font-size: 1.5em;
+
+    text-decoration: none;
+}
+footer > .contact > h2 {
+    margin: 0px;
+    margin-bottom: 5px;
+    text-align: center;
+    font-size: 2.6em;
+    color: white;
+}
+
+@media (max-width: 425px) {
+    footer {
+        flex-direction: column;
+    }
+
+    footer > .socials > h2 {
+        font-size: 2.2em;
+    }
+
+    footer > .contact {
+        margin-top: 30px;
+    }
+    footer > .contact > h2 {
+        font-size: 2em;
+    }
+}

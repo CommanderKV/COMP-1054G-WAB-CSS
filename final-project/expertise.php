@@ -2,16 +2,11 @@
 
 <html>
     <head>
-        <meta charset="utf-8" />
-        <title>Kyler V - Portfolio</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        <link href="css/normalize.css" rel="stylesheet"/>
-        <link href="css/index.css" rel="stylesheet"/>
-        <link href="/Kyler/final-project/css/navigation.css" rel="stylesheet" type="text/css"/>
+        <?php require "includes/head.html"; ?>
     </head>
     <body>
         <header>
-            <?php require("includes/header.html")?>
+            <?php require "includes/header.html"; ?>
         </header>
         <main>
             <span class="navigationList" onclick="toggleNavigation()">&#9776;</span>
@@ -20,7 +15,7 @@
             </section>
         </main>
         <footer>
-            <?php require("includes/footer.html")?>
+            <?php require "includes/footer.html"; ?>
         </footer>
     </body>
 </html>

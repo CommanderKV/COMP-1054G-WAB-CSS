@@ -3,6 +3,7 @@
 <html>
     <head>
         <?php require "includes/head.html"; ?>
+        <link rel="stylesheet" type="text/css" href="css/expertise.css">
     </head>
     <body>
         <header>

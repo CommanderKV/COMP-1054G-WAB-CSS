@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Convergence&family=Edu+NSW+ACT+Foundation:wght@400..700&family=League+Spartan:wght@100..900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+
 /*
 Color pallet:
     #EE7E27 Orange
@@ -15,6 +18,9 @@ html {
     background-color: #000000;
     color: #f8f8f8;
     scroll-behavior: smooth;
+
+    font-family: "Convergence";
+    letter-spacing: 3px;
 }
 
 a {

@@ -58,6 +58,7 @@
     margin: 0px;
     margin-top: 5px;
     margin-bottom: 5px;
+    text-align: center;
 }
 .call-to-action div:hover {
     transform: scale(1.1);

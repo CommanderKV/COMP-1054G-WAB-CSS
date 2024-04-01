@@ -39,7 +39,7 @@
 
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
     <head>
         <?php require "includes/head.html"; ?>
         <link rel="stylesheet" href="css/contact.css">
@@ -55,7 +55,7 @@
                 <h1>Contact me</h1>
             </section>
 
-            <section class="contact-form">
+            <section class="form-center">
                 <div>
                     <h2>Get in touch</h2>
                     <form action="contact.php" method="post">

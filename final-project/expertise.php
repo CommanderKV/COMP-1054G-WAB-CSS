@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
     <head>
         <?php require "includes/head.html"; ?>
         <link rel="stylesheet" type="text/css" href="css/expertise.css">

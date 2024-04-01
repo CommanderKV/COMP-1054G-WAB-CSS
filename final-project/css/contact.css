@@ -42,13 +42,13 @@ html {
 */
 
 /* Add background color and bevel */
-.contact-form {
+.form-center {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
-.contact-form > div {
+.form-center > div {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -68,14 +68,14 @@ html {
 }
 
 /* Style heading */
-.contact-form > div > h2 {
+.form-center > div > h2 {
     font-size: 4em;
     margin: 0px;
-    margin-bottom: 5px;
+    margin-bottom: 20px;
 }
 
 /* Style form */
-.contact-form > div > form {
+.form-center > div > form {
     display: flex;
     flex-direction: column;
 
@@ -89,7 +89,7 @@ html {
 
     padding: 10px;
 }
-.contact-form > div > form > div {
+.form-center > div > form > div {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -97,7 +97,7 @@ html {
     margin: 0;
     margin-bottom: 15px;
 }
-.contact-form > div > form > div > input {
+.form-center > div > form > div > input {
     width: 90%;
     height: 40px;
 
@@ -112,10 +112,25 @@ html {
         rgba(238, 126, 39, 1) 51%
     );
 }
-.contact-form > div > form > div > input:not(:first-child) {
+.form-center > div > form > div > select {
+    width: 60%;
+    height: 50px;
+
+    padding: 10px;
+    font-size: 1.2em;
+
+    border: none;
+    border-radius: 15px;
+
+    background: linear-gradient(160deg, 
+        rgba(248, 248, 248, 1) 0%, 
+        rgba(238, 126, 39, 1) 51%
+    );
+}
+.form-center > div > form > div > input:not(:first-child) {
     margin-left: 10px;
 }
-.contact-form > div > form > div > textarea {
+.form-center > div > form > div > textarea {
     width: 100%;
     height: 90px;
     resize: none;
@@ -133,8 +148,9 @@ html {
 }
 
 /* Style submit button */
-.contact-form > div > form > div > input[type="submit"] {
-    width: 200px;
+.form-center > div > form > div > input[type="submit"] {
+    width: 50%;
+    min-width: 295px;
     height: 60px;
     padding: 3px;
     margin-top: 5px;
@@ -181,27 +197,50 @@ html {
     .masthead > h1 {
         font-size: 5em;
     }
-    .contact-form > div > form > div {
+    .form-center > div > form > div {
         flex-direction: column;
     }
-    .contact-form > div > form > div > input:not(:first-child) {
+    .form-center > div > form > div > input:not(:first-child) {
         margin: 0;
         margin-top: 5px;
     }
-    .contact-form > div > form > div > textarea {
+    .form-center > div > form > div > textarea {
         width: 90%;
+    }
+    .form-center > div > form > div > select {
+        width: 95%;
+    }
+}
+
+@media (max-width: 500px) {
+    .form-center > div > h2 {
+        font-size: 3em;
     }
 }
 
 @media (max-width: 425px) {
-    .contact-form > div > h2 {
-        font-size: 3em;
+    .form-center > div > h2 {
+        font-size: 2.5em;
+    }
+    .form-center > div > form > div > input[type="submit"] {
+        font-size: 1.7em;
+        width: 95%;
+        min-width: 0px;
     }
 }
 
 @media (max-width: 400px) {
     .masthead > h1 {
         font-size: 4em;
+    }
+}
+
+@media (max-width: 374px) {
+    .form-center > div > form > div > input[type="submit"] {
+        font-size: 1.4em;
+    }
+    .form-center > div > form > div > select {
+        width: 100%;
     }
 }
 

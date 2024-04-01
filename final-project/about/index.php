@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
     <head>
         <?php require "../includes/head.html"; ?>
-        <link href="css/index.css" rel="stylesheet"/>
+        <link href="css/index.css" rel="stylesheet">
     </head>
     <body>
         <header>
@@ -17,7 +17,7 @@
             <section id="hobbies" class="about-section">
                 <a>
                     <section id="sailing">
-                        <img src="../imgs/sailing-banner.jpg" alt="Sailboats lined up along a beach"/>
+                        <img src="../imgs/sailing-banner.jpg" alt="Sailboats lined up along a beach">
                         <div class="full-section">
                             <h2>Sailing</h2>
                             <p>I love being out on the water and pushing the limits of my Laser sailboat</p>
@@ -26,7 +26,7 @@
                 </a>
                 <a>
                     <section id="programming">
-                        <img src="../imgs/programming-banner.webp" alt="A double monitor setup with a RGB microphone and keyboard"/>
+                        <img src="../imgs/programming-banner.webp" alt="A double monitor setup with a RGB microphone and keyboard">
                         <div class="full-section">
                             <h2>Programming</h2>
                             <p>I've always been interested in programming and having the power to make whatever I wanted to</p>
@@ -39,7 +39,7 @@
                 <div class="half-section g-display">
                     <a>
                         <section id="regent-heights">
-                            <img src="../imgs/rh-banner.png" alt="Regent Heights Public School logo"/>
+                            <img src="../imgs/rh-banner.png" alt="Regent Heights Public School logo">
                             <div>
                                 <h2>Regent Heights</h2>
                                 <h3>2009-2019</h3>
@@ -49,7 +49,7 @@
                     </a>
                     <a>
                         <section id="satec">
-                            <img src="../imgs/satec-banner.gif" alt="SATEC @ W.A Porter logo"/>
+                            <img src="../imgs/satec-banner.gif" alt="SATEC @ W.A Porter logo">
                             <div>
                                 <h2>SATEC</h2>
                                 <h3>2019-2023</h3>
@@ -60,7 +60,7 @@
                 </div>
                 <a>
                     <section id="lakehead-georgian">
-                        <img src="../imgs/lugc-banner.png" alt="Lakehead Georgian College logo"/>
+                        <img src="../imgs/lugc-banner.png" alt="Lakehead Georgian College logo">
                         <div class="full-section">
                             <h2>Lakehead Georgian</h2>
                             <h3>2023-current</h3>
@@ -73,7 +73,7 @@
             <section id="past-work" class="about-section">
                 <a>
                     <section id="ryc">
-                        <img src="../imgs/ryc-banner.webp" alt="Rondeau Yacht Club logo"/>
+                        <img src="../imgs/ryc-banner.webp" alt="Rondeau Yacht Club logo">
                         <div class="full-section">
                             <h2>Rondeau Yacht Club</h2>
                             <h3>2021-current</h3>
@@ -83,7 +83,7 @@
                 </a>
                 <a>
                     <section id="bayview">
-                        <img src="../imgs/bayview-banner.png" alt="Bayview Market logo"/>
+                        <img src="../imgs/bayview-banner.png" alt="Bayview Market logo">
                         <div class="full-section">
                             <h2>Bayview Market</h2>
                             <h3>2020-current</h3>
